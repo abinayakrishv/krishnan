@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body{
+            font-family:'Roboto' sans-serif;
+        }
+        section{
+            padding:40px 20px;
+        }
+        .project-card:hover{
+            background-color: black;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        @media(max-width:480px){
+            form{
+                flex-direction: column;
+                gap:10px;
+                width:100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+ <nav>
+ <h2 class="logo">MyPortfolio</h2>
+ <ul class="nav-links">
+ <li><a href="#about">About</a></li>
+ <li><a href="#projects">Projects</a></li>
+ <li><a href="#contact">Contact</a></li>
+ </ul>
+ </nav>
+ <section id="about">
+ <h2>About Me</h2>
+ <p>I am a passionate developer focused on building full-stack 
+applications.</p>
+ </section>
+ <section id="projects">
+ <h2>My Projects</h2>
+ <div class="project-gallery">
+ <div class="project-card">Project 1</div>
+ <div class="project-card">Project 2</div>
+ <div class="project-card">Project 3</div>
+ </div>
+ </section>
+ <section id="contact">
+ <h2>Contact Me</h2>
+ <form>
+ <input type="text" placeholder="Your Name" required />
+ <input type="email" placeholder="Your Email" required />
+ <textarea placeholder="Your Message" required></textarea>
+ <button type="submit">Send</button>
+</body>
+</html>

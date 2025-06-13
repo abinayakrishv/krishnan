@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .gadget card{
+            display: flex;
+            flex-direction:column;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            border:10px solid black;
+            padding:10px;
+            height:100%;
+            width: auto;
+            }
+            
+            
+        img{
+            width: 100px;
+            height: 50px;
+        }
+        @media(max-width:480px){
+            .gadget card{
+                flex-direction:column;
+                align-items: center;
+            }
+        }
+    button{
+        background-color: aliceblue;
+        color: blue;
+        font: size 10px;
+    }
+</style>
+<body>
+    <div class="gadget card">
+     <div class="item">
+        <img src="mob.jpeg" alt="pic">
+     </div>
+     <div class="item">
+        <img src="Lectrus-5G-WiFi-Tablet-10-inch-Android-Tablet-Computer-6000mAh-Battery.webp" alt="pic">
+     </div>
+     <div class="item">
+        <img src="lap.jpeg" alt="pic">
+     </div>
+    </div>
+    <button>click me</button>
+</body>
+</html>

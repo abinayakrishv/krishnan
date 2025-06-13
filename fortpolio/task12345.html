@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: aquamarine;
+            margin: 0;
+            padding:0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            line-height: 1.6;
+            padding: 50px;
+            background-color:var(--background color);
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            padding:20px;
+            background-color: blue;
+            color:white;
+            align-items: center;
+        }
+        .nav-link{
+            list-style:none;
+            gap: 20px;
+            display: flex;
+            
+        }
+        .nav-link li a{
+            color: white;
+         text-decoration:none ;
+
+        }
+        @media(max-width:480px){
+            nav{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        .project-card-hover{
+    background-color: #6e1116;
+    font-size:20px;
+}
+       
+    </style>
+</head>
+<body>
+<nav>
+ <h2 class="logo">ABINAYA</h2>
+ <ul class="nav-links">
+ <li><a href="#about">About</a></li>
+ <li><a href="#projects">Projects</a></li>
+ <li><a href="#contact">Contact</a></li>
+ </ul>
+ </nav>
+<section id="about">
+<img src="WhatsApp Image 2025-06-07 at 10.28.04_0f4f3f4f.jpg" alt=" pic">
+ <h2>About Me</h2>
+ <p>I am Abinaya Krishnan completed my Masters in Computer science Engineering with 84%.I am interested in coding and I am quick learner.</p>
+ </section>
+ <section id="projects">
+ <h2>My Projects</h2>
+ <div class="project-gallery">
+ <div class="project-card">Project 1</div>
+ <p> Telecardiac Monitoring System Using Matlab</p>
+ <div class="project-card">Project 2</div>
+ <p> Brain Tumour Dectection Using Machine Learning Technique</p>
+ <div class="project-card">Project 3</div>
+ <p> mobile friendly gadget card</p>
+ <a href="MOBILE FRIENDLY GADGET CARDS.HTML" target="_blank">view project</a>
+ <div class="project-card">project4</div>
+ <p> gadget showcase</p>
+ <a href="Gadget showcase.html" target="_blank"> view project</a>
+ </div>
+</body>
+</html>
